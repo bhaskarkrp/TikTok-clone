@@ -70,7 +70,7 @@ export default function PostMain({ post }: PostMainProps) {
           </p>
 
           <div className="mt-2.5 flex flex-col sm:flex-row relative">
-            <div className="relative h-[80vh] w-full max-[600px]:h-[50vh] max-[430px]:h-[30vh] flex items-center bg-black rounded-xl cursor-pointer">
+            <div className="relative h-[80vh] w-full max-[600px]:h-[50vh] flex items-center bg-black rounded-xl cursor-pointer">
               <video
                 id={`video-${post.id}`}
                 loop
