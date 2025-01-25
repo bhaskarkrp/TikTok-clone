@@ -94,7 +94,7 @@ export default function TopNav() {
             className="w-full pl-3 my-2 bg-transparent placeholder-[#838383] text-[15px] focus:outline-none"
           />
 
-          {searchProfiles.length > 0 ? (
+          {searchProfiles.length > 0 && isActive ? (
             <div className="bg-white max-w-[910px] h-auto w-full z-20 border p-1 absolute left-0 top-14 ">
               {searchProfiles.map((profile, index) => (
                 <div className="p-1" key={index}>
