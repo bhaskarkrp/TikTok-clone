@@ -11,7 +11,7 @@ const useGetAllPosts = async () => {
     const documents = response.documents;
 
     const objPromises = documents.map(async (doc) => {
-      let profile = await useGetProfileByUserId(doc?.user_id);
+      const profile = await useGetProfileByUserId(doc?.user_id);
 
       return {
         id: doc?.$id,

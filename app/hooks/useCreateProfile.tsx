@@ -1,4 +1,4 @@
-import { database, ID, Query } from "@/libs/AppWriteClient";
+import { database, ID } from "@/libs/AppWriteClient";
 
 const useCreateProfile = async (
   userId: string,

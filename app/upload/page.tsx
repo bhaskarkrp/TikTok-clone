@@ -8,7 +8,6 @@ import { BiLoaderCircle, BiSolidCloudUpload } from "react-icons/bi";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { PiKnifeLight } from "react-icons/pi";
 import { useUser } from "../context/user";
-import { SiNuke } from "react-icons/si";
 import useCreatePost from "../hooks/useCreatePost";
 
 export default function Upload() {

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Comment, Like, PostMainProps } from "../types";
 import { AiFillHeart } from "react-icons/ai";
 import { BiLoaderCircle } from "react-icons/bi";
-import { FaCommentDots, FaShare } from "react-icons/fa";
+import { FaCommentDots } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import { useGeneralStore } from "../stores/general";
 import { useUser } from "../context/user";

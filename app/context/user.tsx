@@ -21,7 +21,7 @@ const UserProvider: React.FC<{ children: React.ReactNode }> = ({
       const currentSession = await account.getSession("current");
       if (!currentSession) return;
 
-      const promise = (await account.get()) as any;
+      const promise = (await account.get());
       const profile = await useGetProfileByUserId(promise?.$id);
 
       setUser({

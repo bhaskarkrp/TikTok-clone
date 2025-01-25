@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import { useGeneralStore } from "@/app/stores/general";
 
 export default function Register() {
-  let { setIsLoginOpen } = useGeneralStore();
+  const { setIsLoginOpen } = useGeneralStore();
 
   const router = useRouter();
   const contextUser = useUser();
@@ -59,7 +59,7 @@ export default function Register() {
   };
 
   const register = async () => {
-    let isError = validate();
+    const isError = validate();
     if (isError) return;
     if (!contextUser) return;
 

@@ -7,9 +7,9 @@ import Register from "@/app/components/auth/Register";
 import { useState } from "react";
 
 export default function AuthOverlay() {
-  let { setIsLoginOpen } = useGeneralStore();
+  const { setIsLoginOpen } = useGeneralStore();
 
-  let [isRegister, setIsRegister] = useState<boolean>(false);
+  const [isRegister, setIsRegister] = useState<boolean>(false);
 
   return (
     <>
@@ -35,10 +35,10 @@ export default function AuthOverlay() {
             </span>
 
             <button
-              onClick={() => setIsRegister((isRegister = !isRegister))}
+              onClick={() => setIsRegister((isRegister) => !isRegister)}
               className="text-[14px] text-[#F02C56] font-semibold pl-1"
             >
-              <span>{!isRegister ? "Register" : "log in"}</span>
+              <span>{!isRegister ? "Register" : "Log in"}</span>
             </button>
           </div>
         </div>

@@ -12,7 +12,6 @@ export default function SideNav() {
   const pathName = usePathname();
 
   const { setRandomUsers, randomUsers } = useGeneralStore();
-  const contextUser = useUser();
 
   useEffect(() => {
     setRandomUsers();

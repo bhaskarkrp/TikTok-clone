@@ -8,7 +8,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 import { useRouter } from "next/navigation";
 import ClientOnly from "@/app/components/ClientOnly";
-import { Post as PostType, PostPageProps } from "@/app/types";
+import { PostPageProps } from "@/app/types";
 import { usePostStore } from "@/app/stores/post";
 import { useLikeStore } from "@/app/stores/like";
 import { useCommentStore } from "@/app/stores/comments";

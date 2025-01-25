@@ -17,7 +17,7 @@ export default function PostMain({ post }: PostMainProps) {
     const postMainElement = document.getElementById(`postMain-${post.id}`);
 
     if (postMainElement) {
-      let observer = new IntersectionObserver(
+      const observer = new IntersectionObserver(
         (entries) => {
           entries[0].isIntersecting ? video.play() : video.pause();
         },

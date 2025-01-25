@@ -1,12 +1,12 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { AiFillHeart } from "react-icons/ai";
 import { BsChatDots, BsTrash3 } from "react-icons/bs";
 import { ImMusic } from "react-icons/im";
 import { useRouter } from "next/navigation";
 import moment from "moment";
-import { useEffect, useState } from "react";
 import { BiLoaderCircle } from "react-icons/bi";
 import ClientOnly from "../ClientOnly";
 import { CommentsHeaderProps } from "@/app/types";
@@ -37,7 +37,7 @@ export default function CommentsHeader({ params, post }: CommentsHeaderProps) {
       setCommentsByPost(params.postId);
       setLikesByPost(params.postId);
     }
-  }, [post]);
+  }, [post, params.postId]);
 
   const hasUserLikedPost = () => {
     if (likesByPost.length < 1 || !contextUser?.user?.id) {
@@ -45,7 +45,7 @@ export default function CommentsHeader({ params, post }: CommentsHeaderProps) {
       return;
     }
 
-    let res = useIsLiked(contextUser.user.id, params.postId, likesByPost);
+    const res = useIsLiked(contextUser.user.id, params.postId, likesByPost);
     setUserLiked(res ? true : false);
   };
 
