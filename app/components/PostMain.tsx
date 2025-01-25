@@ -70,14 +70,14 @@ export default function PostMain({ post }: PostMainProps) {
           </p>
 
           <div className="mt-2.5 flex">
-            <div className="relative min-h-[480px] max-h-[580px] max-w-[260px] flex items-center bg-black rounded-xl cursor-pointer">
+            <div className="relative h-[80vh] max-w-[80vw] md flex items-center bg-black rounded-xl cursor-pointer">
               <video
                 id={`video-${post.id}`}
                 loop
                 controls
                 muted
                 src={useCreateBucketUrl(post.video_url)}
-                className="rounded-xl object-cover mx-auto h-full"
+                className="rounded-xl object-cover mx-auto h-full w-full"
               />
 
               <img
