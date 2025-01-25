@@ -69,8 +69,8 @@ export default function PostMain({ post }: PostMainProps) {
             <AiFillHeart size={20} />
           </p>
 
-          <div className="mt-2.5 flex">
-            <div className="relative h-[80vh] max-w-[80vw] md flex items-center bg-black rounded-xl cursor-pointer">
+          <div className="mt-2.5 flex flex-col sm:flex-row relative">
+            <div className="relative h-[80vh] w-full max-[600px]:h-[50vh] max-[430px]:h-[30vh] flex items-center bg-black rounded-xl cursor-pointer">
               <video
                 id={`video-${post.id}`}
                 loop
@@ -87,8 +87,9 @@ export default function PostMain({ post }: PostMainProps) {
                 alt="watermark"
               />
             </div>
-
-            <PostMainLikes post={post} />
+            <div className="absolute -right-4 bottom-10">
+              <PostMainLikes post={post} />
+            </div>
           </div>
           <p className="text-[15px] pb-0.5 mt-3 break-words md:max-w-[400px] max-w-[300px]">
             {post.text}
