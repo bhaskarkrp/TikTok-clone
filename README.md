@@ -1,25 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TikTok Clone 🎵📱  
 
-## Getting Started
+## Overview  
+This **TikTok Clone** is a full-stack video-sharing platform replicating TikTok's core functionalities, allowing users to upload, view, like, and comment on short videos. Built with **Next.js**, **TypeScript**, and **TailwindCSS**, this project delivers a smooth and interactive user experience with modern web technologies.  
 
-First, run the development server:
+## Features  
+✅ **User Authentication** – Secure login/signup with OAuth  
+✅ **Video Upload & Streaming** – Users can upload videos with real-time processing.  
+✅ **Like & Comment System** – Engage with content through likes and comments.  
+✅ **Infinite Scroll** – Seamless content discovery with an endless feed.  
+✅ **Profile Management** – View and manage user profiles.  
+✅ **Dark Mode Support** – Toggle between light and dark themes.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech Stack  
+- **Frontend:** Next.js, TypeScript, TailwindCSS  
+- **State Management:** context-api, Zustand
+- **Backend:** Node.js, Express  
+- **Database:** PostgreSQL  
+- **Storage:** Cloudinary for video storage  
+- **Authentication:** Appwrite auth  
